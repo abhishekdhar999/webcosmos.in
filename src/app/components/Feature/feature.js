@@ -48,6 +48,7 @@ const posts = [
 ];
 
 const MyFeature = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
   const scrollContainerRef = useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -124,7 +125,7 @@ const MyFeature = () => {
             <a href={post.href}>
               <div
                 className="bg-cover bg-center h-64 rounded-lg shadow-md"
-                style={{ backgroundImage: `url(${post.image})` }}
+                style={{ backgroundImage: `url(${basePath}${post.image})` }}
               >
                 <div className="bg-black bg-opacity-50 h-full rounded-lg p-4 flex flex-col justify-end">
                   <h2 className="text-xl font-bold text-white mt-2">{post.title}</h2>

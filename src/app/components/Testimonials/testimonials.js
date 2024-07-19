@@ -26,6 +26,9 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -40,7 +43,7 @@ const Testimonials = () => {
               }`}
               onClick={() => setActiveIndex(index)}
             >
-              <img src={testimonial.image} alt={testimonial.name} className="w-8 h-8 rounded-full" />
+              <img src={`${basePath}${testimonial.image}`} alt={testimonial.name} className="w-8 h-8 rounded-full" />
               <div className="ml-4">
                 <div className="font-bold text-xl pb-2">{testimonial.name}</div>
                 <div className="text-sm">{testimonial.position}</div>
@@ -51,7 +54,7 @@ const Testimonials = () => {
         </div>
         <div className="w-2/3">
           <blockquote className="p-6">
-          <h3 class="font-bold text-2xl mb-3">{testimonials[activeIndex].short}</h3>
+          <h3 className="font-bold text-2xl mb-3">{testimonials[activeIndex].short}</h3>
             <p className="text-xl italic mb-4 font-light">&quot;{testimonials[activeIndex].testimonial}&quot;</p>
           </blockquote>
         </div>
