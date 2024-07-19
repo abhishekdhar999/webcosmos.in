@@ -52,7 +52,7 @@ const Testimonials = () => {
         <div className="w-2/3">
           <blockquote className="p-6">
           <h3 class="font-bold text-2xl mb-3">{testimonials[activeIndex].short}</h3>
-            <p className="text-xl italic mb-4 font-light">"{testimonials[activeIndex].testimonial}"</p>
+            <p className="text-xl italic mb-4 font-light">&quot;{testimonials[activeIndex].testimonial}&quot;</p>
           </blockquote>
         </div>
       </div>
