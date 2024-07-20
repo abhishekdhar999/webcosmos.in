@@ -11,7 +11,7 @@ export const BlogSection = () => {
     <div className="text-center">
       <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Latest articles</h2>
       <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-        This is your life and it's ending one minute @ a time...</p><button className="p-8 text-left text-blue-500 mt-2 hover:underline">View all Articles →</button>
+        This is your life and it&apos;s ending one minute @ a time...</p><button className="p-8 text-left text-blue-500 mt-2 hover:underline">View all Articles →</button>
     </div>
     <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 
