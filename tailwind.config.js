@@ -26,6 +26,8 @@ module.exports = {
           8: "#E5E7EB",
         },
         primary: "#6966ff",
+        dot: "#6a67fc",
+        line: "#2d2e42",
         "heading-white": "#fafafc",
         "background": "#181824",
         secondary: "#242333",

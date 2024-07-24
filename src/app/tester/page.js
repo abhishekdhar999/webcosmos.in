@@ -4,10 +4,12 @@ import TestimonialSection from '../components/Testimonials/TestimonialsSection';
 import { Subscribe } from '../components/Footer/subscribe';
 import { Footer } from '../components/Footer/footer';
 import { BlogSection } from '../components/Blogs/BlogSection';
+import { ServicesSection } from '../components/Services/Services';
 
 const About = () => {
   return (
     <div>
+      <ServicesSection/>
          <FeatureSection />
          <TestimonialSection/>
          <BlogSection />
