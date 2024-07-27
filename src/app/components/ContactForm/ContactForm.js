@@ -12,7 +12,7 @@ const ContactForm = () => {
     agreement1: false,
     agreement2: false,
   });
-
+  const [successMessage, setSuccessMessage] = useState('');
   const fileInputRef = useRef(null);
 
   const handleFileUpload = () => {
@@ -37,6 +37,13 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.budget || !formData.message || !formData.agreement2) {
+      alert('Please fill out all fields and select at least one option.');
+      return;
+    }
+    
     const response = await fetch(`${process.env.NEXT_PUBLIC_CONTACT_POST_URL}`, {
       method: 'POST',
       headers: {
@@ -49,10 +56,32 @@ const ContactForm = () => {
     });
     const result = await response.json();
     console.log(result);
+
+    // Display success message and reset form
+    if (response.ok) {
+      setSuccessMessage('Your details have been received successfully. We will contact you shortly.');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        budget: '',
+        message: '',
+        agreement1: false,
+        agreement2: false,
+      });
+      setSelectedOptions([]);
+    } else {
+      setSuccessMessage('There was an error sending your details. Please try again.');
+    }
   };
 
   return (
     <div className="max-w-4xl mx-auto p-8 bg-black text-white">
+      {successMessage && (
+        <div className="mb-4 p-4 bg-green-500 text-black rounded">
+          {successMessage}
+        </div>
+      )}
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
           {['A new website', 'Branding', 'Motion graphics', 'E-Commerce', 'Development', 'On-going support', 'App from scratch'].map((text) => (
@@ -103,16 +132,6 @@ const ContactForm = () => {
             onChange={handleChange}
             className="border-b-2 border-white bg-black w-full py-2 focus:outline-none placeholder-gray-400"
           />
-          {/* <div className="flex items-center">
-            <label
-              className="cursor-pointer flex items-center space-x-2 text-white"
-              onClick={handleFileUpload}
-            >
-              <span>📎</span>
-              <span>Attachments</span>
-              <input type="file" ref={fileInputRef} className="hidden" />
-            </label>
-          </div> */}
         </div>
 
         <p className="mb-4">
