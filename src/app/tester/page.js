@@ -10,9 +10,9 @@ import ContactForm from '../components/ContactForm/ContactForm';
 const About = () => {
   return (
     <div>
-      {/* <ServicesSection/> */}
       <ContactForm/>
-         <FeatureSection />
+      <ServicesSection/>
+         {/* <FeatureSection /> */}
          <TestimonialSection/>
          <BlogSection />
          <Subscribe/>

@@ -19,14 +19,14 @@ export const ServicesSection = () => {
                             <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-dot rounded-full top-1/2"></div>
                         </div>
                         <div className="relative p-4 my-6 text-heading-white col-start-6 col-end-10 mr-auto">
-                            <img src="/test.png" className="w-full h-auto" alt="Event 1" />
+                            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/test.png`} className="w-full h-auto" alt="Event 1" />
                         </div>
                     </div>
 
                     {/* Event 2 */}
                     <div className="flex md:contents">
                         <div className="relative p-4 my-6 text-heading-white col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
-                            <img src="/test.png" className="w-full h-auto" alt="Event 2" />
+                            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/test.png`} className="w-full h-auto" alt="Event 2" />
                         </div>
                         <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                             <div className="flex items-center justify-center w-6 h-full">
@@ -55,7 +55,7 @@ export const ServicesSection = () => {
                             <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-dot rounded-full top-1/2"></div>
                         </div>
                         <div className="relative p-4 my-6 text-heading-white col-start-6 col-end-10 mr-auto">
-                            <img src="/test.png" className="w-full h-auto" alt="Event 3" />
+                            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/test.png`} className="w-full h-auto" alt="Event 3" />
                         </div>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ const About = () => {
         <section className="flex flex-col md:flex-row px-20 mx-32 items-center justify-center">
           <div className="text-center md:text-left">
             <p className="text-2xl font-thin leading-relaxed mb-2 md:mb-0 text-center">
-              Welcome to <span className="font-bold">WebCosmic</span>, where we don't just build websites—we craft digital experiences that are out of this world. As a forward-thinking web development agency, we're here to launch your business into the future with our innovative solutions.
+              Welcome to <span className="font-bold">WebCosmic</span>, where we don&apos;t just build websites—we craft digital experiences that are out of this world. As a forward-thinking web development agency, we&apos;re here to launch your business into the future with our innovative solutions.
             </p>
           </div>
         </section>
@@ -45,7 +45,7 @@ const About = () => {
               &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Our Vision
             </h2>
             <p className="text-[20px] font-thin leading-relaxed">
-              At WebCosmic, we see a future where your brand stands out in the digital universe. We're dedicated to creating transformative digital experiences that propel your business forward.
+              At WebCosmic, we see a future where your brand stands out in the digital universe. We&apos;re dedicated to creating transformative digital experiences that propel your business forward.
             </p>
           </div>
           <div className="md:w-1/2 md:pr-4">
@@ -59,7 +59,7 @@ const About = () => {
              &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Our Approach
             </h2>
             <p className="text-[20px] font-thin leading-relaxed">
-              Innovation is our compass. We stay ahead of the curve with the latest technologies and trends, ensuring your brand is always future-ready. Our commitment to excellence means your business doesn't just survive—it thrives.
+              Innovation is our compass. We stay ahead of the curve with the latest technologies and trends, ensuring your brand is always future-ready. Our commitment to excellence means your business doesn&apos;t just survive—it thrives.
             </p>
           </div>
           <div className="md:w-1/2 md:pl-4">
