@@ -25,7 +25,7 @@ const Testimonials = ({ testimonials, showViewMore }) => {
               </div>
             </button>
           ))}
-          {showViewMore && (<a href="/testimonial" className="p-8 text-left text-blue-500 mt-2 hover:underline">View other 20 testimonials →</a>)}
+          {showViewMore && (<a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/testimonial`} className="p-8 text-left text-blue-500 mt-2 hover:underline">View other 20 testimonials →</a>)}
         </div>
         <div className="w-2/3">
           <blockquote className="p-6">
