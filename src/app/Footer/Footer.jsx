@@ -207,7 +207,7 @@ export default function Footer() {
       `}</style>
       <div className="footer-top">
         <div className="footer-logo">
-          <img src="/webcosmic.png" alt="Logo" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/logo/logo.png`} alt="Logo" />
         </div>
         <div className="footer-contact">
           <CopyToClipboard text="hello@webcosmic.com" onCopy={handleCopy}>

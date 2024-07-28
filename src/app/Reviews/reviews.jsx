@@ -4,6 +4,9 @@ import React from 'react';
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export default function Reviews() {
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   const clients = [
     '/bioquench.png', // Replace with the actual paths to your client logos
     '/oddpartikles.png',
@@ -161,12 +164,12 @@ export default function Reviews() {
         <div className="logo-track">
           {clients.map((client, index) => (
             <div className="logo" key={index}>
-              <img src={client} alt={`Client ${index + 1}`} />
+              <img src={`${basePath}${client}`} alt={`Client ${index + 1}`} />
             </div>
           ))}
           {clients.map((client, index) => (
             <div className="logo" key={`duplicate-${index}`}>
-              <img src={client} alt={`Client ${index + 1}`} />
+              <img src={`${basePath}${client}`} alt={`Client ${index + 1}`} />
             </div>
           ))}
         </div>

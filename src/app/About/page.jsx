@@ -49,7 +49,7 @@ const About = () => {
             </p>
           </div>
           <div className="md:w-1/2 md:pr-4">
-            <img src="/ourvisionnew.png" alt="Our Vision" className="w-full h-auto max-w-xs mx-auto" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/ourvisionnew.png`} alt="Our Vision" className="w-full h-auto max-w-xs mx-auto" />
           </div>
         </section>
 
@@ -63,7 +63,7 @@ const About = () => {
             </p>
           </div>
           <div className="md:w-1/2 md:pl-4">
-            <img src="/approach.png" alt="Our Approach" className="w-full h-auto max-w-xs mx-auto " />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/approach.png`} alt="Our Approach" className="w-full h-auto max-w-xs mx-auto " />
           </div>
         </section>
 
@@ -83,11 +83,6 @@ const About = () => {
         @font-face {
           font-family: '__syne_ab8453';
           src: url('path-to-syne-ab8453.woff2') format('woff2');
-        }
-
-        @font-face {
-          font-family: '__syne_Fallback_ab8453';
-          src: url('path-to-syne-fallback-ab8453.woff2') format('woff2');
         }
 
         .font-syne {
