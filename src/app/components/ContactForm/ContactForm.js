@@ -149,7 +149,7 @@ const ContactForm = () => {
         <div className="mb-8">
           <label className="flex items-center mb-4">
             <input type="radio" name="agreement1" checked={formData.agreement1} onChange={handleChange} className="mr-2" />
-            <span className="text-gray-400">I'm happy to receive a monthly newsletter from KOTA</span>
+            <span className="text-gray-400">I&apos;m happy to receive a monthly newsletter from KOTA</span>
           </label>
           <label className="flex items-center">
             <input type="radio" name="agreement2" checked={formData.agreement2} onChange={handleChange} className="mr-2" />
