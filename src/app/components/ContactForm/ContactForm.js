@@ -43,9 +43,8 @@ const ContactForm = () => {
       alert('Please fill out all fields and select at least one option.');
       return;
     }
-    const endpoint = process.env.NEXT_PUBLIC_CONTACT_POST_URL || CONTACT_POST_URL;
-
-    const response = await fetch(`${endpoint}`, {
+    
+    const response = await fetch(`${process.env.NEXT_PUBLIC_CONTACT_POST_URL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
