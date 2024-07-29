@@ -62,9 +62,7 @@ export const ServicesSection = () => {
 
                 {/* Internal Link Button */}
                 <div className="text-center mt-8">
-                    <button className="p-8 text-left text-blue-500 mt-2 hover:underline">
-                        View all Projects →
-                    </button>
+                    <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/work`} className="p-8 text-left text-blue-500 mt-2 hover:underline">View all Projects →</a>
                 </div>
             </div>
         </div>
