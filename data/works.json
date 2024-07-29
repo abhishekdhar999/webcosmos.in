@@ -1,0 +1,44 @@
+[
+        {
+            "name": "Florence",
+            "year": "2024",
+            "image": "/work/sample.webp",
+            "text": "Description of Florence",
+            "link": "/work/florence"
+        },
+        {
+            "name": "Tangerine",
+            "year": "2023",
+            "image": "/work/sample.webp",
+            "text": "Description of Tangerine",
+            "link": "/work/tangerine"
+        },
+        {
+            "name": "Bellsant",
+            "year": "2023",
+            "image": "/work/sample.webp",
+            "text": "Description of Bellsant",
+            "link": "/work/bellsant"
+        },
+        {
+            "name": "Floan",
+            "year": "2023",
+            "image": "/work/sample.webp",
+            "text": "Description of Floan",
+            "link": "/work/floan"
+        },
+        {
+            "name": "Florence",
+            "year": "2024",
+            "image": "/work/sample.webp",
+            "text": "Description of Florence",
+            "link": "/work/florence"
+        },
+        {
+            "name": "Tangerine",
+            "year": "2023",
+            "image": "/work/sample.webp",
+            "text": "Description of Tangerine",
+            "link": "/work/tangerine"
+        }
+]
