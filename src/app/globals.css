@@ -785,11 +785,6 @@ nav.shift ul li a:hover:after {
   display: block; /* Ensures the image is displayed properly */
 }
 
-
-
-  scrollbar-width: none;  /* Firefox */
-}
-
 html, body {
   overflow-x: hidden;
 }
