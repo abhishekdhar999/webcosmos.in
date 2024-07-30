@@ -7,20 +7,27 @@ const Testimonials = ({ testimonials, showViewMore }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="text-white p-8 rounded-lg mx-auto">
-      <div className="flex">
-        <div className="w-1/3 pr-6 flex flex-col space-y-2">
+    // <div className="text-white bg-gray-900 p-8 lg:p-12 rounded-lg shadow-lg shadow-gray-50 mx-4 sm:mx-8 md:mx-12 my-8">
+      <div className="flex flex-col lg:flex-row">
+        {/* Testimonials Navigation */}
+        <div className="w-full lg:w-1/3 lg:pr-6 flex flex-col space-y-4">
           {testimonials.map((testimonial, index) => (
             <button
               key={index}
               className={`flex items-start p-4 rounded-lg text-left transition-all duration-300 ease-in-out ${
-                index === activeIndex ? 'bg-gray-700' : ''
-              }`}
-              onClick={() => setActiveIndex(index)}
+                index === activeIndex ? "bg-gray-700" : "bg-gray-800"
+              } hover:bg-gray-700`}
+              onMouseOver={() => setActiveIndex(index)}
             >
-              <img src={`${basePath}${testimonial.image}`} alt={testimonial.name} className="w-8 h-8 rounded-full" />
+              <img
+                src={`${basePath}${testimonial.image}`}
+                alt={testimonial.name}
+                className="w-12 h-12 rounded-full"
+              />
               <div className="ml-4">
-                <div className="font-bold text-xl pb-2">{testimonial.name}</div>
+                <div className="font-bold text-lg md:text-xl pb-1">
+                  {testimonial.name}
+                </div>
                 <div className="text-sm">{testimonial.position}</div>
               </div>
             </button>
@@ -34,7 +41,7 @@ const Testimonials = ({ testimonials, showViewMore }) => {
           </blockquote>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
