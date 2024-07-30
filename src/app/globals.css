@@ -786,3 +786,10 @@ nav.shift ul li a:hover:after {
 }
 
 
+
+  scrollbar-width: none;  /* Firefox */
+}
+
+html, body {
+  overflow-x: hidden;
+}
