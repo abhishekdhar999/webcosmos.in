@@ -40,7 +40,7 @@ const Blob = () => {
       }
     `;
 
-    const blobGeometry = new THREE.SphereGeometry(18, 28, 48);
+    const blobGeometry = new THREE.SphereGeometry(22, 28, 48);
     const blobMaterial = new THREE.ShaderMaterial({
       vertexShader,
       fragmentShader,

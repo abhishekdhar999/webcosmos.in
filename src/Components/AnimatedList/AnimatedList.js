@@ -35,7 +35,7 @@ const AnimatedList = () => {
   return (
     <div className=''>
       <div className='we-left  mx-6 text-lg font-semibold'>
-        crafting the <span className='text-blue-500 rounded-lg border-blue-500 border-2 p-2'>{displayedText}</span> one pixel at a time
+        crafting the <span className='text-[#c367ca] rounded-lg border-[#c367ca] border-2 p-2'>{displayedText}</span> one pixel at a time
         </div>
       <div className='right mx-6 '>
         <div className="typewriter text-5xl font-extrabold ">

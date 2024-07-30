@@ -1,69 +1,30 @@
-// src/Components/PreLoader.js
+// components/Preloader.js
 
-"use client";
+import React from 'react';
+// import styles from './Preloader.module.css'; // Import styles
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-
-const PreLoader = ({ isLoading }) => {
-  const loaderRef = useRef(null);
-
-  useEffect(() => {
-    if (!isLoading) {
-      // Fade out the loader when loading is complete
-      gsap.to(loaderRef.current, {
-        opacity: 0,
-        duration: 1,
-        onComplete: () => {
-          // Optionally, remove the loader from the DOM
-          loaderRef.current.style.display = 'none';
-        }
-      });
-    } else {
-      // Reset loader visibility if needed
-      loaderRef.current.style.display = 'flex';
-      gsap.to(loaderRef.current, {
-        opacity: 1,
-        duration: 0
-      });
-    }
-  }, [isLoading]);
-
+const Preloader = () => {
   return (
-    <div
-      ref={loaderRef}
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100vw',
-        height: '100vh',
-        backgroundColor: '#000',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        zIndex: 9999
-      }}
-    >
-      {/* Your loading animation here */}
-      <div className="loader"></div>
-      <style jsx>{`
-        .loader {
-          border: 8px solid rgba(255, 255, 255, 0.3);
-          border-radius: 50%;
-          border-top: 8px solid #fff;
-          width: 50px;
-          height: 50px;
-          animation: spin 1s linear infinite;
-        }
+<>
+<div>
+        <img src="20240728_143228.png" alt="" />
+      </div>
 
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
+    
+    <div className='preloader'>
+
+      
+      <div className='animate-diagonal h-[200px] w-[200px]'>
+        <img src="3d-illustration-cartoon-character-snowboarder-with-snowboard-removebg-preview.png" alt="" />
+      </div>
+      <h2 className='text-4xl font-sans font-extrabold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'>Happy Surrfing...</h2>
+      <div className='loader'>
+      
+      </div>
     </div>
+
+    </>
   );
 };
 
-export default PreLoader;
+export default Preloader;

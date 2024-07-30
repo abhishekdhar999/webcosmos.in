@@ -75,9 +75,9 @@ const StarSphere = () => {
 
   useEffect(() => {
     const outerRadius = 2.7; // Outer sphere radius
-    const innerRadius = 1.2; // Inner sphere radius
-    const outerStarsCount = 1000;
-    const innerStarsCount = 1500;
+    const innerRadius = 1.4; // Inner sphere radius
+    const outerStarsCount = 1500;
+    const innerStarsCount = 2500;
 
     // Create outer sphere
     const outerStars = createRandomSphere(outerRadius, outerStarsCount);
@@ -90,7 +90,7 @@ const StarSphere = () => {
     const innerStars = createRandomSphere(innerRadius, innerStarsCount);
     const innerGeometry = new THREE.BufferGeometry();
     innerGeometry.setAttribute('position', new THREE.Float32BufferAttribute(innerStars, 3));
-    const innerMaterial = new THREE.PointsMaterial({ color: 0xff0000, size: 0.01 });
+    const innerMaterial = new THREE.PointsMaterial({ color: "#E0A800", size: 0.01 });
     const innerMesh = new THREE.Points(innerGeometry, innerMaterial);
 
     // Add both spheres to the group

@@ -8,7 +8,7 @@ import { BlogSection } from '../components/Blogs/BlogSection';
 const About = () => {
   return (
     <div>
-         <FeatureSection />
+         {/* <FeatureSection /> */}
          <TestimonialSection/>
          <BlogSection />
          <Subscribe/>
